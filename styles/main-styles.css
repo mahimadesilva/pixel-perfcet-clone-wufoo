@@ -1,0 +1,7 @@
+@import url("reset.css");
+@import url("global.css");
+
+@import url("components/header/main-nav.css");
+@import url("components/header/header-banner.css");
+
+@import url("components/footer/footer-section-1.css");

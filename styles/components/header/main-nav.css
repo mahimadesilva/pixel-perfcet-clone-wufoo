@@ -1,0 +1,179 @@
+/* -------mobile styles--------------------------------------------------------------------- */
+.nav-mobile {
+  max-height: 100vh;
+}
+.nav-mobile-main {
+  color: #3a3a3a;
+  text-align: left;
+  min-width: 5rem;
+  line-height: 5rem;
+  height: 5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "National-Regular", "National", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-mobile-main__logo img {
+  width: 100px;
+  height: 40.6747294717px;
+}
+.nav-mobile-main__menu-x {
+  cursor: pointer;
+  display: flex;
+}
+.nav-mobile-main__menu,
+.nav-mobile-main-login {
+  padding: 0 16px;
+}
+.nav-mobile-main-login {
+  cursor: pointer;
+}
+.nav-mobile-main__x {
+  display: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0 51.50125px 0 16px;
+  font-family: "National-Medium", "Helvetica", "Arial", sans-serif;
+}
+.nav-mobile-menu-list {
+  overflow: scroll;
+  width: 80%;
+  background: #e66760;
+  color: #fff;
+  height: calc(100vh - 5rem);
+  flex-direction: column;
+  display: inline-block;
+}
+.nav-mobile--menu-opened {
+  display: none;
+  width: 100%;
+  position: absolute;
+  animation: showNav .2s ease;
+}
+@keyframes showNav {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.nav-mobile-menu-list li a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.125rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav-mobile-menu-list li a:hover {
+  background-color: transparent;
+}
+.nav-mobile-layer {
+  background-color: black;
+  width: 20%;
+  opacity: 0.45;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* -----------------desktop styles ----------------------------------------------------------------------*/
+.nav-desktop {
+  display: none;
+  color: #3a3a3a;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.0625rem;
+  font-family: "National-Regular", "National", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+.nav-desktop__logo {
+  padding-right: 54px;
+  padding-left: 16px;
+}
+.nav-desktop__logo img {
+  width: 100px;
+  height: 40.6747294717px;
+}
+.nav-desktop__list-item {
+  display: inline-flex;
+  align-items: center;
+  height: 5rem;
+}
+.nav-desktop__list-item > a {
+  display: block;
+  padding: 0 1rem;
+}
+.nav-desktop__list-item > a:hover {
+  color: #e66760 !important;
+}
+.nav-desktop__sublist {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  background-color: #f8fafb;
+  text-transform: none !important;
+}
+.nav-desktop__list-item:hover  .nav-desktop__sublist {
+  display: block;
+}
+
+.nav-desktop__sublist a {
+  display: block;
+  padding: 0.25rem 2rem 0.25rem 1rem;
+}
+.nav-desktop__sublist a:hover {
+  color: #e66760 !important;
+}
+.nav-desktop__auth {
+  margin: 0 0 0 auto;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.nav-desktop__auth button {
+  box-sizing: border-box;
+  padding: 0 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.0625rem;
+  font-family: "National-Regular", "National", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+.auth__signup {
+  background-color: #2685c6;
+  border: 1px solid #99caec;
+  color: #fff;
+  font-weight: 600 !important;
+  height: 2.5rem;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+.auth__signup:hover {
+  background-color: #2f93d7;
+}
+.auth__login {
+  min-width: 6.5rem;
+  text-align: center;
+}
+.auth__login:hover {
+  font-size: 0;
+}
+.auth__login:hover::before {
+  content: 'rawrr!';
+  font-size: 1.125rem;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1120px) {
+  /* original site break point is 920 px */
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
+    display: flex;
+  }
+}

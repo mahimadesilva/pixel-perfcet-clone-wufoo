@@ -1,0 +1,79 @@
+.header-banner {
+  padding-top: 6.125rem;
+}
+.header-banner-text {
+  color: #3a3a3a;
+  text-align: center;
+  padding-bottom: 8rem;
+}
+.hbt__header {
+  margin: 0 auto 0.375rem;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  max-width: 38rem;
+  font-weight: 400;
+}
+.hbt__text {
+  margin: 0 auto;
+  font-size: 1.375rem;
+  max-width: 38rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+.hbt__post-text {
+  font-size: 1rem;
+  line-height: 1.25;
+  max-width: 38rem;
+  margin: 1rem auto 0 auto;
+}
+.hbt__post-text a {
+  text-decoration: underline;
+}
+.header-banner-media__container {
+  max-width: 100% !important;
+  width: 500px !important;
+  display: block !important;
+  margin: 0 auto !important;
+  box-shadow: 0 0 9px 2px rgb(157 157 157 / 25%);
+  border: 5px solid #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 4.875px;
+}
+.youtube-video {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hbt__header {
+    font-size: 3.25rem;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 920px) {
+  .header-banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .header-banner-text {
+    padding-right: 4.875rem;
+    flex-grow: 1;
+  }
+  .header-banner-text * {
+    text-align: left;
+  }
+  .header-banner-media {
+    max-width: 500px;
+    flex-grow: 1;
+  }
+}

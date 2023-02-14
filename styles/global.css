@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "National-Regular";
+  src: url("../fonts/National2Web-Regular.woff2") format('woff2');
+}
+@font-face {
+  font-family: "National-Medium";
+  src: url("../fonts/National2Web-Medium.woff2") format('woff2');
+}
+body {
+  color: #6e6c6c;
+  font: 300 118.5%/1.65 "National-Regular", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.container {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.show {
+  display: block !important;
+}
+.show-flex {
+  display: flex !important;
+}
+.show-grid {
+  display: grid !important;
+}
+.hide {
+  display: none !important;
+}
