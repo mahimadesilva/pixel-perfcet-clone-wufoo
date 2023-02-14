@@ -29,6 +29,9 @@
 .hbt__post-text a {
   text-decoration: underline;
 }
+.header-banner-media {
+  padding-bottom: 4.875rem;
+}
 .header-banner-media__container {
   max-width: 100% !important;
   width: 500px !important;
@@ -38,7 +41,6 @@
   border: 5px solid #fff;
   box-sizing: border-box;
   overflow: hidden;
-  padding-bottom: 4.875px;
 }
 .youtube-video {
   width: 100%;

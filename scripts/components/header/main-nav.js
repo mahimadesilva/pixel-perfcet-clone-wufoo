@@ -8,10 +8,12 @@ window.addEventListener('DOMContentLoaded', event => {
     menu.classList.toggle('hide'); //classList did not have hide
     x.classList.toggle('show'); //classList did not have show
     openedMenu.classList.toggle('show-flex'); //classList did not have show
+    document.body.style.overflow = 'hidden';
   })
   x.addEventListener('click', event => {
     menu.classList.toggle('hide'); //classList had hide
     x.classList.toggle('show'); //classList had show
     openedMenu.classList.toggle('show-flex'); //classList had show
+    document.body.style.overflow = 'scroll';
   })
 })

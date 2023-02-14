@@ -52,6 +52,7 @@
   width: 100%;
   position: absolute;
   animation: showNav .2s ease;
+  z-index: 99;
 }
 @keyframes showNav {
   from {opacity: 0;}
@@ -115,6 +116,7 @@
   top: 5rem;
   background-color: #f8fafb;
   text-transform: none !important;
+  z-index: 99;
 }
 .nav-desktop__list-item:hover  .nav-desktop__sublist {
   display: block;

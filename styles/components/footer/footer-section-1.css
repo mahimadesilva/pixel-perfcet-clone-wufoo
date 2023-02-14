@@ -1,0 +1,41 @@
+.fs1-sublist {
+  margin-bottom: 1.5rem;
+}
+.fs1-sublist__title {
+  display: block;
+  text-align: center;
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1.3125rem;
+  line-height: 1;
+  padding: 0.5rem 0;
+}
+.fs1-sublist__item a {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #837c8d;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+.fs1-sublist__title:hover, .fs1-sublist__item a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 920px) {
+  .fs1-list {
+    display: flex;
+  }
+  .fs1-sublist {
+    width: 20%;
+    padding-right: 1.5rem;
+  }
+  .fs1-sublist__title {
+    text-align: left;
+    margin: 0 0 0.625rem 0;
+    padding-top: 0.625rem 0 0 0;
+  }
+  .fs1-sublist__item a {
+    text-align: left;
+    padding: 0.625rem 0 0 0;
+  }
+}
