@@ -1,3 +1,10 @@
+.slideshow-container {
+  background-color: #f8fafb;
+}
+.slideshow {
+  padding-bottom: 5.125rem;
+  overflow: hidden;
+}
 .slideshow-header {
   text-align: center;
   color: #18587a;
@@ -12,6 +19,7 @@
 }
 .slide-hidden-only-for-height {
   padding: 0 1.5rem;
+  margin-bottom: 3rem;
   visibility: hidden;
 }
 .slide {
@@ -75,6 +83,9 @@
   outline: none;
   background: rgb(0, 0, 0);
   opacity: 0.25;
+}
+.slideshow-dots__button:hover {
+  opacity: 0.75;
 }
 .slideshow-dots__button-active {
   background-color: #e66760;
