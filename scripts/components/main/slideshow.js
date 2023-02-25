@@ -1,4 +1,6 @@
 window.addEventListener("DOMContentLoaded", (event) => {
+  const slidesContainer = document.querySelector(".slides-container");
+
   const slide1 = document.querySelector('.slide[data-slide-id="1"]');
   const slide2 = document.querySelector('.slide[data-slide-id="2"]');
   const slide3 = document.querySelector('.slide[data-slide-id="3"]');
@@ -37,7 +39,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   let nextSlide = 1;
   const slidesMover = (toLeft, chosenNextSilde) => () => {
-    debugger;
     if (chosenNextSilde) {
       nextSlide = chosenNextSilde;
     } else if (toLeft) {
@@ -100,4 +101,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
   rightArrow.addEventListener("click", (event) => {
     showSlideshow(false, null);
   });
+  console.log(slidesContainer)
+  if (!window.matchMedia("(min-width: 768px)").matches) {
+    slidesContainer.addEventListener('swiped-left', event => {
+      showSlideshow(false, null);
+    })
+    slidesContainer.addEventListener('swiped-right', event => {
+      showSlideshow(true, null);
+    })
+  }
 });
