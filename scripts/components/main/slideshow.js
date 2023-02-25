@@ -101,13 +101,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
   rightArrow.addEventListener("click", (event) => {
     showSlideshow(false, null);
   });
-  console.log(slidesContainer)
-  if (!window.matchMedia("(min-width: 768px)").matches) {
-    slidesContainer.addEventListener('swiped-left', event => {
-      showSlideshow(false, null);
-    })
-    slidesContainer.addEventListener('swiped-right', event => {
-      showSlideshow(true, null);
-    })
-  }
 });
